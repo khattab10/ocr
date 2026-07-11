@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GoVia favicon">
+  <title>GoVia - favicon</title>
+  <defs>
+    <linearGradient id="gv-fav-route" x1="150" y1="360" x2="380" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#4ADE80"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" rx="120" ry="120" fill="#0B1F3A"/>
+  <path d="M150 200 L246 356 L370 128"
+        fill="none" stroke="url(#gv-fav-route)" stroke-width="52"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="370" cy="128" r="34" fill="#FFFFFF"/>
+</svg>

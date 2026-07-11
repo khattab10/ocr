@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 320" role="img" aria-label="GoVia primary stacked logo on light background">
+  <title>GoVia - primary stacked logo (light background)</title>
+  <defs>
+    <linearGradient id="gv-s-route" x1="28" y1="86" x2="94" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16A34A"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap');
+    .gv-word { font-family: 'Plus Jakarta Sans','Manrope','Segoe UI',system-ui,sans-serif; font-weight: 800; font-size: 74px; letter-spacing: -3px; }
+    .gv-tag  { font-family: 'Plus Jakarta Sans','Manrope','Segoe UI',system-ui,sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 3px; }
+  </style>
+
+  <g transform="translate(110 8) scale(1.0)">
+    <path d="M30 40 L57 84 L92 28" fill="none" stroke="url(#gv-s-route)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="30" cy="40" r="6" fill="#F8FAFC" stroke="#22C55E" stroke-width="5"/>
+    <circle cx="92" cy="28" r="12" fill="#0B1F3A"/>
+    <circle cx="92" cy="28" r="4.4" fill="#22C55E"/>
+  </g>
+
+  <text class="gv-word" x="170" y="220" text-anchor="middle">
+    <tspan fill="#0B1F3A">Go</tspan><tspan fill="#22C55E">Via</tspan>
+  </text>
+
+  <text class="gv-tag" x="170" y="262" text-anchor="middle" fill="#64748B">WE RECOMMEND. YOU DECIDE.</text>
+</svg>
