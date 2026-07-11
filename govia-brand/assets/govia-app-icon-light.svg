@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GoVia app icon, light">
+  <title>GoVia - app icon (light)</title>
+  <defs>
+    <linearGradient id="gv-iconl-bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="gv-iconl-route" x1="150" y1="360" x2="380" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16A34A"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="512" height="512" rx="114" ry="114" fill="url(#gv-iconl-bg)"/>
+  <rect x="6" y="6" width="500" height="500" rx="110" ry="110" fill="none" stroke="#E2E8F0" stroke-width="2"/>
+
+  <g transform="translate(0 6)">
+    <path d="M150 200 L246 356 L370 128"
+          fill="none" stroke="url(#gv-iconl-route)" stroke-width="46"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="150" cy="200" r="20" fill="#FFFFFF" stroke="#22C55E" stroke-width="16"/>
+    <circle cx="370" cy="128" r="40" fill="#0B1F3A"/>
+    <circle cx="370" cy="128" r="15" fill="#22C55E"/>
+  </g>
+</svg>

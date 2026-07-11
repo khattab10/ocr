@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GoVia — Brand & Logo System</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --navy:#0B1F3A;
+    --navy-2:#12294A;
+    --green:#22C55E;
+    --green-d:#16A34A;
+    --green-l:#4ADE80;
+    --white:#FFFFFF;
+    --bg:#F8FAFC;
+    --slate:#64748B;
+    --line:#E2E8F0;
+    --radius:22px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter','Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+    background:var(--bg);
+    color:var(--navy);
+    -webkit-font-smoothing:antialiased;
+    line-height:1.6;
+  }
+  .word{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;letter-spacing:-.03em;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  /* Hero */
+  header.hero{
+    background:
+      radial-gradient(900px 500px at 80% -10%, rgba(34,197,94,.18), transparent 60%),
+      radial-gradient(700px 500px at 0% 110%, rgba(34,197,94,.10), transparent 60%),
+      linear-gradient(160deg,#0B1F3A 0%, #12294A 100%);
+    color:#fff;padding:88px 0 96px;position:relative;overflow:hidden;
+  }
+  .hero .badge{
+    display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;
+    letter-spacing:.12em;text-transform:uppercase;color:#4ADE80;
+    background:rgba(34,197,94,.10);border:1px solid rgba(34,197,94,.28);
+    padding:8px 14px;border-radius:999px;margin-bottom:26px;
+  }
+  .hero h1{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:52px;letter-spacing:-.03em;line-height:1.05;margin-bottom:16px;}
+  .hero p.lead{font-size:19px;max-width:560px;color:#CBD5E1;}
+  .hero .heromark{margin:44px 0 8px;}
+  .tag{font-family:'Plus Jakarta Sans',sans-serif;font-weight:600;letter-spacing:.22em;font-size:13px;color:#94A3B8;text-transform:uppercase;}
+
+  /* Sections */
+  section{padding:72px 0;}
+  section:nth-child(even){background:#fff;}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green-d);margin-bottom:10px;}
+  h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:32px;letter-spacing:-.02em;margin-bottom:12px;}
+  .sub{color:var(--slate);max-width:640px;font-size:16px;margin-bottom:36px;}
+
+  .grid{display:grid;gap:24px;}
+  .g2{grid-template-columns:repeat(2,1fr);}
+  .g3{grid-template-columns:repeat(3,1fr);}
+  .g4{grid-template-columns:repeat(4,1fr);}
+  @media(max-width:860px){.g2,.g3,.g4{grid-template-columns:1fr;}.hero h1{font-size:38px;}}
+
+  .card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:16px;min-height:200px;position:relative;
+  }
+  .card.dark{background:linear-gradient(160deg,#0B1F3A,#12294A);border-color:#12294A;}
+  .card .label{position:absolute;top:14px;left:16px;font-size:12px;font-weight:600;color:var(--slate);letter-spacing:.04em;}
+  .card.dark .label{color:#94A3B8;}
+  .card svg{display:block;}
+
+  /* Color palette */
+  .swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+  @media(max-width:860px){.swatches{grid-template-columns:repeat(2,1fr);}}
+  .swatch{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff;}
+  .swatch .chip{height:120px;}
+  .swatch .meta{padding:16px 18px;}
+  .swatch .name{font-weight:700;font-size:15px;}
+  .swatch .hex{font-family:'Inter',monospace;color:var(--slate);font-size:13px;margin-top:2px;letter-spacing:.02em;}
+  .swatch .use{font-size:12.5px;color:var(--slate);margin-top:8px;}
+
+  /* Type */
+  .typerow{display:flex;flex-wrap:wrap;align-items:baseline;gap:22px;padding:22px 0;border-bottom:1px solid var(--line);}
+  .typerow:last-child{border-bottom:0;}
+  .typerow .spec{width:150px;color:var(--slate);font-size:13px;flex:none;}
+
+  /* concept */
+  .concept{display:flex;gap:20px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;}
+  .concept .num{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:20px;color:#fff;background:var(--green);min-width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;}
+  .concept h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;margin-bottom:4px;}
+  .concept p{color:var(--slate);font-size:14.5px;}
+
+  /* do / dont */
+  .rule{border-radius:var(--radius);padding:22px 24px;font-size:14.5px;border:1px solid var(--line);background:#fff;}
+  .rule b{display:block;margin-bottom:6px;font-family:'Plus Jakarta Sans',sans-serif;}
+  .rule.do b{color:var(--green-d);}
+  .rule.dont b{color:#EF4444;}
+  .rule ul{margin:0;padding-left:18px;color:var(--slate);}
+  .rule li{margin:4px 0;}
+
+  footer{background:var(--navy);color:#94A3B8;padding:40px 0;text-align:center;font-size:14px;}
+  footer .word{color:#fff;font-size:20px;}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">● AI-Powered Shipping Marketplace</span>
+    <h1>The GoVia Brand System</h1>
+    <p class="lead">One app. Every shipping company. Smart recommendations. Your choice.</p>
+
+    <div class="heromark">
+      <!-- Primary stacked logo (dark) -->
+      <svg width="300" height="270" viewBox="0 0 340 320" aria-label="GoVia logo">
+        <defs>
+          <linearGradient id="h-route" x1="28" y1="86" x2="94" y2="26" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#22C55E"/><stop offset="1" stop-color="#4ADE80"/>
+          </linearGradient>
+        </defs>
+        <g transform="translate(110 8)">
+          <path d="M30 40 L57 84 L92 28" fill="none" stroke="url(#h-route)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="30" cy="40" r="6" fill="#0B1F3A" stroke="#22C55E" stroke-width="5"/>
+          <circle cx="92" cy="28" r="12" fill="#FFFFFF"/>
+          <circle cx="92" cy="28" r="4.4" fill="#22C55E"/>
+        </g>
+        <text class="word" x="170" y="220" text-anchor="middle" font-size="74">
+          <tspan fill="#FFFFFF">Go</tspan><tspan fill="#22C55E">Via</tspan>
+        </text>
+        <text class="tag" x="170" y="262" text-anchor="middle">WE RECOMMEND. YOU DECIDE.</text>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- ============ PRIMARY LOGO ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">01 — Primary Logo</div>
+    <h2>The smartest path forward</h2>
+    <p class="sub">The GoVia mark is a route that bends upward into a checkmark — a smart path that ends in a confident choice. The lower dot is the seller's origin; the solid node is the recommended, chosen carrier.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="label">Primary · Light</span>
+        <svg width="280" height="264" viewBox="0 0 340 320" aria-label="GoVia primary logo light">
+          <defs><linearGradient id="pl-route" x1="28" y1="86" x2="94" y2="26" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#16A34A"/><stop offset="1" stop-color="#22C55E"/></linearGradient></defs>
+          <g transform="translate(110 8)">
+            <path d="M30 40 L57 84 L92 28" fill="none" stroke="url(#pl-route)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="30" cy="40" r="6" fill="#F8FAFC" stroke="#22C55E" stroke-width="5"/>
+            <circle cx="92" cy="28" r="12" fill="#0B1F3A"/><circle cx="92" cy="28" r="4.4" fill="#22C55E"/>
+          </g>
+          <text class="word" x="170" y="220" text-anchor="middle" font-size="74"><tspan fill="#0B1F3A">Go</tspan><tspan fill="#22C55E">Via</tspan></text>
+          <text class="tag" x="170" y="262" text-anchor="middle" fill="#64748B">WE RECOMMEND. YOU DECIDE.</text>
+        </svg>
+      </div>
+      <div class="card dark">
+        <span class="label">Primary · Dark</span>
+        <img src="assets/govia-logo-stacked-dark.svg" width="280" alt="GoVia primary logo dark" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HORIZONTAL ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">02 — Horizontal Lockup</div>
+    <h2>Horizontal wordmark</h2>
+    <p class="sub">Use across website headers, dashboards and documents where vertical space is tight.</p>
+    <div class="grid g2">
+      <div class="card">
+        <span class="label">Horizontal · Light</span>
+        <svg width="360" height="110" viewBox="0 0 460 140" aria-label="GoVia horizontal light">
+          <defs><linearGradient id="hl-route" x1="28" y1="86" x2="94" y2="26" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#16A34A"/><stop offset="1" stop-color="#22C55E"/></linearGradient></defs>
+          <g transform="translate(6 10)">
+            <path d="M30 40 L57 84 L92 28" fill="none" stroke="url(#hl-route)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="30" cy="40" r="6" fill="#F8FAFC" stroke="#22C55E" stroke-width="5"/>
+            <circle cx="92" cy="28" r="12" fill="#0B1F3A"/><circle cx="92" cy="28" r="4.4" fill="#22C55E"/>
+          </g>
+          <text class="word" x="150" y="94" font-size="82"><tspan fill="#0B1F3A">Go</tspan><tspan fill="#22C55E">Via</tspan></text>
+        </svg>
+      </div>
+      <div class="card dark">
+        <span class="label">Horizontal · Dark</span>
+        <svg width="360" height="110" viewBox="0 0 460 140" aria-label="GoVia horizontal dark">
+          <defs><linearGradient id="hd-route" x1="28" y1="86" x2="94" y2="26" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#22C55E"/><stop offset="1" stop-color="#4ADE80"/></linearGradient></defs>
+          <g transform="translate(6 10)">
+            <path d="M30 40 L57 84 L92 28" fill="none" stroke="url(#hd-route)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="30" cy="40" r="6" fill="#0B1F3A" stroke="#22C55E" stroke-width="5"/>
+            <circle cx="92" cy="28" r="12" fill="#FFFFFF"/><circle cx="92" cy="28" r="4.4" fill="#22C55E"/>
+          </g>
+          <text class="word" x="150" y="94" font-size="82"><tspan fill="#FFFFFF">Go</tspan><tspan fill="#22C55E">Via</tspan></text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SYMBOL ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">03 — Symbol</div>
+    <h2>The route mark</h2>
+    <p class="sub">The symbol stands alone as an app glyph, avatar, or favicon. It works in full colour and single colour.</p>
+    <div class="grid g4">
+      <div class="card"><span class="label">Colour</span><img src="assets/govia-symbol.svg" width="120" alt="symbol colour"/></div>
+      <div class="card dark"><span class="label">On dark</span><img src="assets/govia-symbol-dark.svg" width="120" alt="symbol dark"/></div>
+      <div class="card"><span class="label">Mono navy</span><img src="assets/govia-symbol-mono-navy.svg" width="120" alt="symbol mono navy"/></div>
+      <div class="card dark"><span class="label">Mono white</span><img src="assets/govia-symbol-mono-white.svg" width="120" alt="symbol mono white"/></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APP ICON ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">04 — App Icon & Favicon</div>
+    <h2>Ready for the home screen</h2>
+    <p class="sub">A rounded-square icon with a soft signal-green glow — instantly recognisable at any size.</p>
+    <div class="grid g4">
+      <div class="card"><span class="label">iOS / Android</span><img src="assets/govia-app-icon.svg" width="150" alt="app icon"/></div>
+      <div class="card"><span class="label">Light variant</span><img src="assets/govia-app-icon-light.svg" width="150" alt="app icon light"/></div>
+      <div class="card dark"><span class="label">Favicon 512</span><img src="assets/favicon.svg" width="110" alt="favicon"/></div>
+      <div class="card">
+        <span class="label">Scale test</span>
+        <div style="display:flex;align-items:center;gap:16px;">
+          <img src="assets/govia-app-icon.svg" width="72" alt="icon 72"/>
+          <img src="assets/govia-app-icon.svg" width="44" alt="icon 44"/>
+          <img src="assets/govia-app-icon.svg" width="28" alt="icon 28"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORDMARK ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">05 — Wordmark</div>
+    <h2>Wordmark only</h2>
+    <p class="sub">“Go” in deep navy for trust; “Via” in electric green for the smart route. Set in Plus Jakarta Sans ExtraBold.</p>
+    <div class="grid g2">
+      <div class="card">
+        <svg width="280" height="94" viewBox="0 0 360 120" aria-label="GoVia wordmark">
+          <text class="word" x="180" y="82" text-anchor="middle" font-size="86" letter-spacing="-3"><tspan fill="#0B1F3A">Go</tspan><tspan fill="#22C55E">Via</tspan></text>
+        </svg>
+      </div>
+      <div class="card dark">
+        <svg width="280" height="94" viewBox="0 0 360 120">
+          <text class="word" x="180" y="82" text-anchor="middle" font-size="86" letter-spacing="-3">
+            <tspan fill="#FFFFFF">Go</tspan><tspan fill="#22C55E">Via</tspan>
+          </text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COLOR ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">06 — Colour Palette</div>
+    <h2>Colour</h2>
+    <p class="sub">Navy carries trust and technology. Electric green signals smart decisions and growth. Kept clean on soft white.</p>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:#0B1F3A"></div><div class="meta"><div class="name">Deep Navy</div><div class="hex">#0B1F3A</div><div class="use">Trust · Technology · Business</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#22C55E"></div><div class="meta"><div class="name">Electric Green</div><div class="hex">#22C55E</div><div class="use">Smart · Success · Growth</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#FFFFFF;border-bottom:1px solid var(--line)"></div><div class="meta"><div class="name">White</div><div class="hex">#FFFFFF</div><div class="use">Space · Clarity</div></div></div>
+      <div class="swatch"><div class="chip" style="background:#F8FAFC;border-bottom:1px solid var(--line)"></div><div class="meta"><div class="name">Cloud</div><div class="hex">#F8FAFC</div><div class="use">Background · Surfaces</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TYPE ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">07 — Typography</div>
+    <h2>Typography</h2>
+    <p class="sub">Plus Jakarta Sans for brand & headings; Inter for product UI and body. Clean, rounded, professional.</p>
+    <div style="background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:8px 28px;">
+      <div class="typerow"><span class="spec">ExtraBold · Logo</span><span class="word" style="font-size:44px">GoVia</span></div>
+      <div class="typerow"><span class="spec">Bold · Heading</span><span style="font-family:'Plus Jakarta Sans';font-weight:700;font-size:30px;">Find the smartest way to ship</span></div>
+      <div class="typerow"><span class="spec">Medium · UI</span><span style="font-family:'Inter';font-weight:500;font-size:19px;">Compare carriers &middot; Get recommendations &middot; Ship</span></div>
+      <div class="typerow"><span class="spec">Regular · Body</span><span style="font-family:'Inter';font-size:16px;color:var(--slate);max-width:520px;">The quick brown fox jumps over the lazy dog. 0123456789</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONCEPT ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">08 — One mark, three meanings</div>
+    <h2>The idea behind the mark</h2>
+    <p class="sub">A single symbol answers all three brand directions at once.</p>
+    <div class="grid g3">
+      <div class="concept"><div class="num">1</div><div><h3>Smart Route</h3><p>The V is a navigation path that resolves into a checkmark — the smartest path, and your choice.</p></div></div>
+      <div class="concept"><div class="num">2</div><div><h3>Connected Network</h3><p>Origin node and destination hub linked through one platform — a marketplace of carriers in a single line.</p></div></div>
+      <div class="concept"><div class="num">3</div><div><h3>Forward Movement</h3><p>The stroke lifts up and to the right: motion, progress and growth built into the geometry.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USAGE ============ -->
+<section>
+  <div class="wrap">
+    <div class="kicker">09 — Usage</div>
+    <h2>Do &amp; Don't</h2>
+    <p class="sub">Keep the mark confident and uncluttered so it reads like a global technology company.</p>
+    <div class="grid g2">
+      <div class="rule do"><b>✓ Do</b>
+        <ul>
+          <li>Give the logo generous clear space (≥ the height of the symbol).</li>
+          <li>Use navy or white backgrounds for maximum contrast.</li>
+          <li>Use the symbol alone for app icons and avatars.</li>
+          <li>Keep “Go” navy and “Via” green.</li>
+        </ul>
+      </div>
+      <div class="rule dont"><b>✕ Don't</b>
+        <ul>
+          <li>Don't add trucks, vans, boxes or location pins.</li>
+          <li>Don't stretch, rotate or recolour the mark.</li>
+          <li>Don't place green text on navy without enough contrast.</li>
+          <li>Don't add drop shadows or outlines to the wordmark.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="word">GoVia</div>
+    <p style="margin-top:8px;">We recommend. You decide.</p>
+  </div>
+</footer>
+
+</body>
+</html>

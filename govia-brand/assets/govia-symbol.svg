@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="GoVia symbol">
+  <title>GoVia - Smart Route symbol</title>
+  <defs>
+    <linearGradient id="gv-route" x1="28" y1="86" x2="94" y2="26" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#16A34A"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Smart route: a V that reads as a navigation path + a checkmark ("your choice"). -->
+  <path d="M30 40 L57 84 L92 28"
+        fill="none"
+        stroke="url(#gv-route)"
+        stroke-width="15"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+
+  <!-- Origin node (where the shipment starts) -->
+  <circle cx="30" cy="40" r="6" fill="#F8FAFC" stroke="#22C55E" stroke-width="5"/>
+
+  <!-- Destination / chosen carrier hub -->
+  <circle cx="92" cy="28" r="12" fill="#0B1F3A"/>
+  <circle cx="92" cy="28" r="4.4" fill="#22C55E"/>
+</svg>
