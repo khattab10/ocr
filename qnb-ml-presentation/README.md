@@ -4,6 +4,18 @@ Executive presentation for the QNB Group Executive Committee and Board of Direct
 
 ## Open the deck
 
+### On iPhone / iPad (Safari)
+
+Do **not** download a ZIP. iOS cannot open a local HTML folder in Safari.
+
+Open this link directly in Safari:
+
+https://old-sunset-850.zerodeploy.app
+
+Swipe left/right or tap the arrows to change slides.
+
+### On a computer
+
 Open `index.html` in a modern browser, or serve locally:
 
 ```bash
@@ -12,6 +24,8 @@ python3 -m http.server 8080
 ```
 
 Then visit `http://localhost:8080`.
+
+`qnb-ml-deck.html` is a single-file copy (CSS and JS inlined) for emailing or offline use.
 
 ## Navigation
 
