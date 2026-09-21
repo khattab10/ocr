@@ -1,20 +1,31 @@
-# QNB Group — On-Premises Data Lakehouse
+# QNB Egypt — On-Premises Data Lakehouse
 
-Internal executive presentation for senior management, risk, finance, IT, and data teams.
-
-## Files
-
-| File | Purpose |
-|---|---|
-| `QNB_OnPremises_Data_Lakehouse.pptx` | 12-slide PowerPoint (widescreen 16:9) |
-| `SPEAKER_GUIDE.md` | Full outline, talking points, peer metrics, and Q&A |
-| `build_presentation.py` | Regenerates the `.pptx` |
+Internal presentation for Data Management / IT, in the **QNB Egypt Canva blue** visual language (soft cornflower gradient, white type, thin-line illustrations).
 
 ## Open the deck
 
-Open `QNB_OnPremises_Data_Lakehouse.pptx` in Microsoft PowerPoint or LibreOffice Impress.
+`QNB_OnPremises_Data_Lakehouse.pptx` — 12 widescreen slides. Each slide is the generated artwork. Speaker notes are attached (View → Notes).
 
-Speaker notes are on every slide (View → Notes). Use `SPEAKER_GUIDE.md` if you want the longer narrative while adapting content.
+`slides/` — PNG of every slide (16:9), for Canva, email, or reprinting.
+
+`SPEAKER_GUIDE.md` — full talking script, peer-bank metrics, and Q&A.
+
+## Slide map
+
+| # | File | Title |
+|---|---|---|
+| 1 | `slide_01_title.png` | Data Lakehouse |
+| 2 | `slide_02_agenda.png` | Agenda |
+| 3 | `slide_03_problem.png` | Too many filing cabinets |
+| 4 | `slide_04_what_is_lakehouse.png` | Warehouse / lake / lakehouse |
+| 5 | `slide_05_how_it_works.png` | Ingestion → storage → consumption |
+| 6 | `slide_06_why_we_need_it.png` | Why the bank needs it |
+| 7 | `slide_07_onprem_platform.png` | On-premises enterprise tools |
+| 8 | `slide_08_wave1.png` | Wave 1 — get the house in order |
+| 9 | `slide_09_waves23.png` | Wave 2 protect · Wave 3 predict |
+| 10 | `slide_10_governance.png` | Catalog, access, quality |
+| 11 | `slide_11_ai.png` | AI, safely |
+| 12 | `slide_12_next_steps.png` | Endorse the lakehouse |
 
 ## Rebuild
 
@@ -23,27 +34,10 @@ pip install -r requirements.txt
 python3 build_presentation.py
 ```
 
-## Slide map
+## Theme
 
-1. Title — Introducing an On-Premises Data Lakehouse
-2. Agenda — Today’s discussion
-3. Problem — Too many filing cabinets
-4. Concept — Warehouse, lake, lakehouse
-5. Architecture — Ingestion, bronze / silver / gold, consumption
-6. Why now — Benefits and peer-bank results
-7. Platform — On-premises enterprise tools
-8. Wave 1 — EDW, reporting, Customer 360
-9. Waves 2–3 — Fraud, credit, AML, then AI
-10. Governance — Catalog, access, quality, operations
-11. AI — Feature store, copilots, examples
-12. Ask — Endorsement and 90-day plan
-
-## Brand
-
-| Token | Hex |
-|---|---|
-| QNB Deep Maroon | `#701C33` |
-| Executive Navy | `#0A2540` |
-| Premium Gold | `#C5A059` |
-
-Typography: Calibri (standard in PowerPoint).
+- Background: medium cornflower blue (Canva QNB Egypt)
+- Type: white, generous space
+- Mark: asterisk + QNB
+- Footer: Data Management · IT Department · QNB EGYPT
+- Illustrations: thin-line people, shelves, and boxes
