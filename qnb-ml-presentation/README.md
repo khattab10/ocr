@@ -1,6 +1,6 @@
 # QNB Group — Machine Learning Business Cases
 
-Executive presentation for the QNB Group Executive Committee and Board of Directors.
+Executive presentation for the QNB Group Executive Committee and Board of Directors, plus a Phase 0 **BRS Discovery Pack** for dual deployment paths.
 
 ## Open the deck
 
@@ -34,6 +34,20 @@ Then visit `http://localhost:8080`.
 10. Operating model, governance & data  
 11. 24-month roadmap & investment stages  
 12. Recommended Board resolutions  
+13. **Addendum** — BRS discovery focus order  
+14. **Addendum** — Path A (cloud/hybrid) vs Path B (air-gapped on-prem OSS)  
+15. **Addendum** — Confirmed MVP (AML FP reduction) & Phase 0 exits  
+
+## BRS Discovery Pack
+
+See [`BRS-DISCOVERY-PACK.md`](BRS-DISCOVERY-PACK.md) for:
+
+- Confirmed decisions (MVP = AML false-positive reduction; dual-path hosting rule)
+- Discovery question log (business, regulatory, data, NFRs, security, delivery)
+- Stage-Gate KPI drafts
+- One-page architecture for Path A and Path B
+
+**Restricted-bank default:** Path B (no egress, on-prem open-source models) for production on sensitive data.
 
 ## Brand system
 
